@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    min-height: 100vh;
+    background-color:hsl(225, 100%, 94%);
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: auto;
+    padding-bottom: 9px;
+    margin: 16px 0;
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+    border-radius: 32px;
+    background-color: white;
+    box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.164);
+    overflow: hidden;
+}
+
+.card__image {
+    width: 100%;
+}
+
+.card__title {
+    margin-top:36px;
+    margin-bottom: 26px;
+    font-weight: 900;
+}
+
+.card__paragraph {
+    width: 80%;
+    margin: auto;
+    color: gray;
+}
+
+.card__container {
+    display: grid;
+    grid: auto auto / 48px auto auto;
+    justify-items: flex-start;
+    align-items:center;
+    column-gap:9px;
+    width:80%;
+    padding: 12px;
+    margin: 26px auto;
+    border-radius: 9px;
+    background-color: whitesmoke;
+    box-sizing:border-box;
+}
+
+.card__container__image {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.card__titleplan {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-weight: 900;
+}
+
+.card__valueplan {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    color:gray;
+}
+
+.card__change {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    justify-self: flex-end;
+}
+
+.card__change:hover {
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+}
+
+.card__button {
+    width: 80%;
+    padding:16px;
+    margin: auto;
+    border: none;
+    border-radius:9px;
+    font-size: 1rem;
+    font-weight: 900;
+    box-shadow: 0 9px 30px rgba(0, 0, 0, 0.301);
+    color:white;
+    background-color: hsl(223, 47%, 23%);
+}
+
+.card__button:hover{
+    background-color: hsl(245, 75%, 52%);
+}
+
+.card__button--transparent {
+    box-shadow:none;
+    background-color: transparent;
+    color: gray;
+}
+
+.card__button--transparent:hover {
+    color:black;
+    background-color: transparent;
+}
+
+.attribution {
+    width: 90%;
+    font-family:'Red Hat Display', sans-serif;
+    text-align: center;
+}
+
+.attribution a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        background-image: url('./images/pattern-background-mobile.svg')
+    }
+
+    .card {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .card {
+        width: 300px;
+    }
+
+    .attribution {
+        font-size: 0.85rem;
+    }
+}
