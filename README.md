@@ -6,7 +6,6 @@
   - [Links](#links)
   - [Processo](#processo)
   - [Construído com](#construído-com)
-  - [Autor](#autor)
 
 <br>
 <br>
@@ -37,10 +36,3 @@
 - CSS Flexbox
 - CSS Grid
 - [Convenção de nomenclatura BEM](https://desenvolvimentoparaweb.com/css/bem/) - Eu usei esse padrão de nomenclatura, que é simples e eficiente e traz bastante vantagens.
-
-<br>
-<br>
-
-## Autor
-
-- Github - [LuanVieiraDev](https://github.com/LuanVieiraDev)
